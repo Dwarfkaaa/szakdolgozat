@@ -295,7 +295,7 @@ class LocationController extends Controller
 
 
         return view('location', compact('name', 'description', 'temp','temperatureMax1','temperatureMin1',
-            'humidity', 'windSpeed', 'windDeg', 'ikon', 'town', 'kiiratasCurrent', 'body', 'tempCurrentFahrenheit',
+            'humidity', 'windSpeed', 'windDeg', 'ikon', 'kiiratasCurrent', 'body', 'tempCurrentFahrenheit',
             'cloudCover', 'pressure', 'sunrise', 'sunset', 'temperatureFahrenheitMax1','temperatureFahrenheitMin1','tempFeelslike', 'tempFahrenheitFeelslike'
             //3napos előrejelzés adatai, melyeket felhasználok jelenleg.
             ,'tempArray','threehoursArray',
