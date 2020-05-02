@@ -1,0 +1,2699 @@
+
+/* menüpont */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background-color: #262626;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px; /*logó méret*/
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+header nav ul li.sub-menu:before {
+    content: "\f0d7";
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #fff;
+    right: 8px;
+}
+
+header nav ul li.active.sub-menu:before {
+    content: "\f0d8";
+}
+
+header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+}
+
+header nav ul li.active ul {
+    display: block;
+}
+
+header nav ul li ul li {
+    display: block;
+    width: 200px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background: #2196f3;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.menu-toggle {
+    color: white;
+    float: right;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+}
+
+
+
+/*  header*/
+@media (max-width: 991px) {
+    header {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        z-index: 1;
+        display: block;
+        font-size: 40px;
+    }
+
+    header nav {
+        z-index: 1;
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 50px);
+        background-color: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    header nav.active {
+        left: 0px;
+    }
+
+
+    header nav ul {        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    }
+
+    header nav ul li.active ul {
+        position: relative;
+        background-color: #003e6f;
+    }
+
+    header nav ul li ul li {
+        width: 100vw;
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1299px){
+    header {
+        font-size: 16px;
+    }
+    header .logo{
+        font-size: 26px;
+    }
+
+}
+
+@media (min-width: 1300px) and (max-width: 1599px){
+    header {
+        font-size: 20px;
+    }
+    header .logo{
+        font-size: 26px;
+    }
+
+}
+@media (min-width: 1600px) and (max-width: 1851px){
+    header {
+        font-size: 22px;
+    }
+    header .logo{
+        font-size: 30px;
+    }
+
+}
+@media (min-width: 1852px) and (max-width: 1919px){
+    header {
+        font-size: 28px;
+    }
+    header .logo{
+        font-size: 36px;
+    }
+
+}
+@media (min-width: 1920px) and (max-width: 2047px){
+    header {
+        font-size: 30px;
+    }
+    header .logo{
+        font-size: 38px;
+    }
+
+}
+@media (min-width: 2048px) and (max-width: 2559px){
+    header {
+        font-size: 30px;
+    }
+    header .logo{
+        font-size: 42px;
+    }
+
+}
+@media (min-width: 2560px) and (max-width: 3839px){
+    header {
+        font-size: 30px;
+
+    }
+    header .logo{
+        font-size: 46px;
+    }
+
+
+
+}
+
+
+
+
+/*  Mobile-S*/
+@media only screen and (max-width: 374px) {
+
+    .SearchWrapper2 {
+
+        top: 21%;
+        left: 95%;
+    }
+    .placeholder{
+        width: 30% !important;
+        height: 30% !important;
+
+    }
+    .menupaddingzero{
+        padding-left: 30px !important;
+    }
+    .avatarimage{
+        display: none;
+    }
+    /*terkep*/
+
+    #map {
+        width:100%;
+        height: 100%;
+        z-index: 0;
+
+    }
+    .owm-popup-detail {
+        display: none;
+    }
+
+    .owm-legend-item {
+        display: none;
+    }
+    .owm-popup-timestamp {
+        display: none;
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+
+        top: 100px !important;
+
+    }
+
+
+    /*5.előrejelzés*/
+
+
+    #fahrenheit, #maxhomerseklet{
+        display: none;
+    }
+    #fahren{
+        height: 300px !important;
+    }
+    #maxhom{
+        height: 300px !important;
+    }
+    .otodiknapdatum{
+        font-size:20px;
+    }
+
+    .otodiknap{
+        font-size:20px;
+    }
+    .otnapiadatok3, .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        font-size: 11px;
+    }
+
+
+
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    /*5.előrejelzésvége*/
+
+    .page-home .panel-time .date {
+
+
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 3rem;
+        line-height: 4rem;
+
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+
+    }
+
+    .SearchWrapper {
+
+        width: 80%;
+        top: 20%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input,
+    .SearchWrapper button {
+
+        padding:10px;  /*ezzel kell majd játszani*/
+        font-size: 15px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 28%;
+        width: 80%;
+        height: 55%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 60px;
+        width: 80px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 1rem;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+
+        font-size: 12px;
+        line-height: 1.5rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+
+        font-size: 10px;
+        line-height: 1.5rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+
+        font-size: 10px;
+        line-height: 1.5rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+
+        height: 40px;
+        width: 40px;
+
+    }
+
+    .ikonmeretdefault{
+        height: 45px;
+    }
+
+    .ikonmeretelorejelzes{
+        height: 35px;
+    }
+
+    .page{
+        height: 800px !important;
+    }
+
+    .hibasvaros{
+        font-size: 20px;
+    }
+
+    .panel-weather .threehoursikon {
+
+        height: 60px;
+        width: 80px;
+        margin-right: 50px;
+
+    }
+
+    .szeliranyharomorasikon{
+        height: 60px;
+
+    }
+    #hom, #fahren, #maxhom{
+        height: 150px;
+        padding-top: 30px;
+    }
+
+    #fel{
+        height: 120px !important;
+        padding-top:30px;
+    }
+
+    .wrapper {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        line-height: 2rem;
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+/*  Mobile-M*/
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+
+    .SearchWrapper2 {
+
+        top: 20%;
+        left: 95%;
+    }
+    .placeholder{
+        width: 35% !important;
+        height: 35% !important;
+
+    }
+
+    .menupaddingzero{
+        padding-left: 30px !important;
+    }
+    .avatarimage{
+        display: none;
+    }
+    /*terkep*/
+    #map {
+        width:100%;
+        height: 100%;
+        z-index: 0;
+
+    }
+    .owm-popup-detail {
+        display: none;
+    }
+
+    .owm-legend-item {
+        display: none;
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+
+        top: 100px !important;
+
+    }
+
+
+    /*5.előrejelzés*/
+    #fahrenheit, #maxhomerseklet{
+        display: none;
+    }
+    #maxhom{
+        height: 300px !important;
+    }
+
+    #fahren{
+        height: 300px !important;
+    }
+    /*5.előrejelzés*/
+    .otodiknapdatum{
+        font-size:20px;
+    }
+
+    .otnapiadatok1, .otnapiadatok2{
+        font-size: 18px;
+    }
+    .otnapiadatok3, .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    /*5.előrejelzésvége*/
+
+
+    /* 3órás*/
+
+    .szeliranyharomorasikon{
+        height: 65px;
+
+    }
+
+    .panel-weather .threehoursikon {
+
+        height: 70px;
+        width: 90px;
+        margin-right: 50px;
+
+    }
+
+    #fel{
+        height: 100px !important;
+        padding-top: 30px;
+    }
+    #hom, #fahren{
+        height: 150px;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        line-height: 2rem;
+        font-size: 15px;
+    }
+
+    .ikonmeretelorejelzes{
+        height: 45px;
+    }
+    /* 3órás vége*/
+
+
+    .page-home .panel-time .date {
+
+
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+
+    }
+
+    .SearchWrapper {
+
+        width: 80%;
+        top: 20%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input,
+    .SearchWrapper button {
+
+        padding:5px;  /*ezzel kell majd játszani*/
+        font-size: 15px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 28%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 70px;
+        width: 90px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 3rem;
+        line-height: 4.5rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 1.2rem;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1.1rem;
+        line-height: 1rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+
+        font-size: 15px;
+        line-height: 1.5rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+
+        font-size: 13px;
+        line-height: 1.5rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+
+        font-size: 13px;
+        line-height: 1.5rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .ikonmeretdefault{
+        height: 45px;
+    }
+
+    .page{
+        height: 800px !important;
+    }
+    .hibasvaros{
+        font-size: 20px;
+    }
+
+
+    .panel-weather #homerseklet {
+
+        width: 1px;
+
+    }
+}
+
+
+/*  Mobile-L*/
+@media only screen and (min-width: 425px) and (max-width: 529px) {
+    .SearchWrapper2 {
+
+        top: 20%;
+        left: 95%;
+    }
+    .placeholder{
+        width: 40% !important;
+        height: 40% !important;
+
+    }
+
+    .menupaddingzero{
+        padding-left: 30px !important;
+    }
+    .avatarimage{
+        display: none;
+    }
+    /*terkep*/
+    #map {
+        width:100%;
+        height: 100%;
+        z-index: 0;
+    }
+    .owm-popup-detail {
+        display: none;
+    }
+
+    .owm-legend-item {
+        display: none;
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+
+        top: 100px !important;
+
+    }
+
+    /*5.előrejelzés*/
+    #fahren{
+        height: 300px !important;
+    }
+    #maxhom{
+        height: 300px !important;
+    }
+    /*5.előrejelzés*/
+    #fahrenheit, #maxhomerseklet{
+        display: none;
+    }
+    .otnapiadatok1, .otnapiadatok2{
+        font-size: 18px;
+    }
+    .otnapiadatok3, .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+
+    .otodiknapdatum{
+        font-size:20px;
+    }
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 16px;
+        line-height: 15px;
+    }
+
+    /*5.előrejelzésvége*/
+
+    /* 3órás*/
+    .szeliranyharomorasikon{
+        height: 65px;
+
+    }
+
+    .panel-weather .threehoursikon {
+
+        height: 70px;
+        width: 110px;
+        margin-right: 50px;
+
+    }
+
+    .ikonmeretelorejelzes{
+        height: 45px;
+    }
+
+    #hom, #fahren {
+        height: 180px;
+        padding-top: 30px;
+    }
+    #fel{
+        height: 120px !important;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        line-height: 2rem;
+        font-size: 15px;
+    }
+
+
+    /* 3órás vége*/
+
+    .hibasvaros{
+        font-size: 25px;
+    }
+
+    .page-home .panel-time .date {
+
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+
+    }
+    .SearchWrapper {
+
+        width: 80%;
+        top: 20%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input,
+    .SearchWrapper button {
+
+        padding:5px;  /*ezzel kell majd játszani*/
+        font-size: 15px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 28%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 80px;
+        width: 110px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 3.5rem;
+        line-height: 6.5rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+
+        font-size: 18px;
+        line-height: 1.5rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+
+        font-size: 15px;
+        line-height: 1.5rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+
+        font-size: 15px;
+        line-height: 1.5rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+
+        height: 60px;
+        width: 60px;
+
+    }
+
+    .ikonmeretdefault{
+        height: 45px;
+    }
+
+    .page{
+        height: 800px !important;
+    }
+
+
+}
+
+
+/*  530-767*/
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+    .SearchWrapper2 {
+
+        top: 22%;
+        left: 100%;
+    }
+    .placeholder{
+        width: 50% !important;
+        height: 50% !important;
+
+    }
+
+    .menupaddingzero{
+        padding-left: 30px !important;
+    }
+    .avatarimage{
+        display: none;
+    }
+    /*terkep*/
+    #map {
+        width:100%;
+        height: 100%;
+        z-index: 0;
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+        top: 500px !important;
+    }
+
+    .owm-legend-item {
+        display: none;
+    }
+
+
+    /*5.előrejelzés*/
+    #fahrenheit, #maxhomerseklet{
+        display: none;
+    }
+    #maxhom{
+        height: 300px !important;
+    }
+    #fahren{
+        height: 300px !important;
+    }
+    /*5.előrejelzés*/
+
+
+    .otnapiadatok1, .otnapiadatok2{
+        font-size: 18px;
+    }
+    .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .otnapiadatok3{
+        font-size: 16px;
+    }
+
+    .otodiknapdatum{
+        font-size:25px;
+    }
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 20px;
+        line-height: 18px;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /*5.előrejelzésvége*/
+
+    /* 3órás*/
+
+    .szeliranyharomorasikon{
+        height: 85px;
+
+    }
+    .panel-weather .threehoursikon {
+
+        height: 100px;
+        width: 130px;
+        margin-right: 50px;
+
+    }
+
+    #hom, #fahren  #fel, #sz{
+        height: 230px;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        line-height: 3rem;
+        font-size: 23px;
+
+    }
+    .ikonmeretelorejelzes{
+        height: 60px;
+    }
+
+
+    /* 3órás vége*/
+
+    .hibasvaros{
+        font-size: 25px;
+    }
+    .page-home .panel-time .date {
+
+
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 5rem;
+        line-height: 5.7rem;
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+
+    }
+    .SearchWrapper {
+
+        width: 80%;
+        top: 25%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input
+    {
+
+        padding:5px;  /*ezzel kell majd játszani*/
+        font-size: 20px;
+    }
+
+
+    .SearchWrapper button {
+
+        height: 40px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 32%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 100px;
+        width: 130px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 4.3rem;
+        line-height: 7rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+
+        font-size: 22px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+
+        height: 60px;
+        width: 60px;
+
+    }
+
+    .ikonmeretdefault{
+        height: 65px;
+    }
+    .page{
+
+        height: 970px !important;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+    .SearchWrapper2 {
+
+        top: 22%;
+        left: 100%;
+    }
+    .placeholder{
+        width: 60% !important;
+        height: 60% !important;
+
+    }
+
+    .menupaddingzero{
+        padding-left: 30px !important;
+    }
+    .avatarimage{
+        display: none;
+    }
+    /*terkep*/
+    #map {
+        width:100%;
+        height: 100%;
+        z-index: 0;
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+        top: 500px !important;
+    }
+
+    /*5.előrejelzés*/
+    .elsonapgomb, .masodiknapgomb, .harmadiknapgomb, .negyediknapgomb, .otodiknapgomb{
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 15px;
+
+    }
+
+    .otnapiadatok1, .otnapiadatok2{
+        font-size: 20px;
+    }
+    .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .otnapiadatok3{
+        font-size:18px;
+    }
+
+    .otodiknapdatum{
+        font-size:30px;
+    }
+
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 20px;
+        line-height: 40px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        font-weight: bold;
+    }
+
+    /*5.előrejelzésvége*/
+
+
+    /* 3órás*/
+
+    .szeliranyharomorasikon{
+        height: 90px;
+
+    }
+    .panel-weather .threehoursikon {
+
+        height: 100px;
+        width: 130px;
+        margin-right: 50px;
+
+    }
+
+    #fel{
+        height: 180px !important;
+        padding-top: 30px;
+    }
+
+    #hom, #fahren{
+        height: 230px;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        line-height: 3rem;
+        font-size: 23px;
+
+    }
+    .ikonmeretelorejelzes{
+        height: 60px;
+    }
+
+
+    /* 3órás vége*/
+
+    .hibasvaros{
+        font-size: 30px;
+    }
+    .page-home .panel-time .date {
+
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 5.5rem;
+        line-height: 7rem;
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+    }
+    .SearchWrapper {
+
+        width: 80%;
+        top: 25%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input
+    {
+
+        padding:10px;  /*ezzel kell majd játszani*/
+        font-size: 20px;
+    }
+
+    .SearchWrapper button {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 32%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 100px;
+        width: 150px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 4rem;
+        line-height: 6rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 2rem;
+        line-height: 3.5rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+
+        font-size: 24px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+
+        height: 70px;
+        width: 70px;
+
+    }
+
+    .ikonmeretdefault{
+        height: 65px;
+    }
+    .page{
+
+        height: 970px !important;
+    }
+}
+
+/*  LAPTOP 900- 1024*/
+@media only screen and (min-width: 900px) and (max-width: 1109px) {
+    .SearchWrapper2 {
+
+        top: 22%;
+        left: 99%;
+    }
+
+    /*terkep*/
+    #map {
+        z-index: 0;
+        width:100%;
+        height: 100%;
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+        top: 200px !important;
+        font-size: 20px !important;
+    }
+    /*5.előrejelzés*/
+    .elsonapgomb, .masodiknapgomb, .harmadiknapgomb, .negyediknapgomb, .otodiknapgomb{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 25px;
+    }
+
+
+    .otnapiadatok1, .otnapiadatok2{
+        font-size: 20px;
+    }
+    .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        padding-top:10px;
+        font-size: 18px;
+    }
+    .otnapiadatok3{
+        font-size:18px;
+    }
+
+    .otodiknapdatum{
+        font-size:30px;
+    }
+
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 20px;
+        line-height: 40px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        font-weight: bold;
+    }
+
+    /*5.előrejelzésvége*/
+
+
+    /* 3órás*/
+
+    .szeliranyharomorasikon{
+        height: 90px;
+
+    }
+    .panel-weather .threehoursikon {
+
+        height: 100px;
+        width: 130px;
+        margin-right: 50px;
+
+    }
+
+    #fel{
+        height: 180px !important;
+        padding-top: 30px;
+    }
+
+    #hom, #fahren{
+        height: 230px;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        line-height: 3rem;
+        font-size: 23px;
+
+    }
+    .ikonmeretelorejelzes{
+        height: 60px;
+    }
+
+
+    /* 3órás vége*/
+
+    .hibasvaros{
+        font-size: 30px;
+    }
+    .page-home .panel-time .date {
+
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 5.5rem;
+        line-height: 7rem;
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+    }
+    .SearchWrapper {
+
+        width: 80%;
+        top: 25%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input
+    {
+
+        padding:10px;  /*ezzel kell majd játszani*/
+        font-size: 20px;
+    }
+
+    .SearchWrapper button {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 32%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 100px;
+        width: 150px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 4rem;
+        line-height: 6rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 2rem;
+        line-height: 3.5rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+
+        font-size: 24px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+
+        height: 70px;
+        width: 70px;
+
+    }
+
+    .ikonmeretdefault{
+        height: 65px;
+    }
+    .page{
+
+        height: 970px !important;
+    }
+}
+
+/*  LAPTOP 1110 1440*/
+@media only screen and (min-width: 1110px) and (max-width: 1440px) {
+    /*terkep*/
+    #map {
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+        top: 200px !important;
+        font-size: 25px !important;
+    }
+    /*5.előrejelzés*/
+    .elsonapgomb, .masodiknapgomb, .harmadiknapgomb, .negyediknapgomb, .otodiknapgomb{
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+        border-style: solid;
+        border-color: #0883a4;
+    }
+
+    .otnapiadatok1, .otnapiadatok2{
+        font-size: 24px;
+    }
+    .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        padding-top: 14px;
+        font-size: 20px;
+    }
+    .otnapiadatok3{
+        font-size:20px;
+    }
+
+    .otodiknapdatum{
+        font-size:30px;
+    }
+
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 20px;
+        line-height: 40px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        font-weight: bold;
+    }
+    .harmadiknapgomb, .negyediknapgomb, .otodiknapgomb{
+
+    }
+    /*5.előrejelzésvége*/
+
+
+    /* 3órás*/
+
+    .szeliranyharomorasikon{
+        height: 90px;
+
+    }
+    .panel-weather .threehoursikon {
+
+        height: 100px;
+        width: 130px;
+        margin-right: 50px;
+
+    }
+
+    #fel{
+        height: 180px !important;
+        padding-top: 30px;
+    }
+
+    #hom, #fahren{
+        height: 230px;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        line-height: 3rem;
+        font-size: 23px;
+
+    }
+    .ikonmeretelorejelzes{
+        height: 60px;
+    }
+
+
+    /* 3órás vége*/
+
+    .hibasvaros{
+        font-size: 30px;
+    }
+    .page-home .panel-time .date {
+
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 5.5rem;
+        line-height: 7rem;
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+    }
+    .SearchWrapper {
+
+        width: 80%;
+        top: 25%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input {
+
+        padding:10px;  /*ezzel kell majd játszani*/
+        font-size: 20px;
+    }
+
+    .SearchWrapper button {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 32%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 100px;
+        width: 150px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 4rem;
+        line-height: 6rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 2rem;
+        line-height: 3.5rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+
+        font-size: 24px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+
+        height: 70px;
+        width: 70px;
+
+    }
+
+    .ikonmeretdefault{
+        height: 65px;
+    }
+    .page{
+
+        height: 970px !important;
+    }
+
+    .SearchWrapper2 {
+
+        top: 23%;
+        left: 97%;
+    }
+
+}
+
+
+/*  LAPTOP L.  - MDPI*/
+@media only screen and (width: 1280px) and (height: 800px) {
+    .SearchWrapper2 {
+
+        top: 23%;
+        left: 97%;
+    }
+
+    /*terkep*/
+    #map {
+        z-index: 0;
+        width:100%;
+        height: 100%;
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+        top: 200px !important;
+        font-size: 25px !important;
+    }
+    /*5.előrejelzés*/
+
+
+    .elsonapgomb, .masodiknapgomb, .harmadiknapgomb, .negyediknapgomb, .otodiknapgomb{
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+        border-style: solid;
+        border-color: #0883a4;
+    }
+
+
+
+    .otnapiadatok1, .otnapiadatok2{
+        font-size: 24px;
+    }
+    .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        padding-top: 14px;
+        font-size: 20px;
+    }
+    .otnapiadatok3{
+        font-size:20px;
+    }
+
+    .otodiknapdatum{
+        font-size:30px;
+    }
+
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 20px;
+        line-height: 40px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        font-weight: bold;
+    }
+
+    /*5.előrejelzésvége*/
+
+
+    /* 3órás*/
+
+    .szeliranyharomorasikon{
+        height: 90px;
+
+    }
+    .panel-weather .threehoursikon {
+
+        height: 100px;
+        width: 130px;
+        margin-right: 50px;
+
+    }
+
+    #fel{
+        height: 180px !important;
+        padding-top: 30px;
+    }
+
+    #hom, #fahren{
+        height: 230px;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        line-height: 3rem;
+        font-size: 23px;
+
+    }
+    .ikonmeretelorejelzes{
+        height: 60px;
+    }
+
+
+    /* 3órás vége*/
+
+    .hibasvaros{
+        font-size: 30px;
+    }
+    .page-home .panel-time .date {
+
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 5.5rem;
+        line-height: 7rem;
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+    }
+    .SearchWrapper {
+
+        width: 80%;
+        top: 25%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input
+    {
+
+        padding:10px;  /*ezzel kell majd játszani*/
+        font-size: 20px;
+    }
+
+    .SearchWrapper button {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 32%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 100px;
+        width: 150px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 4rem;
+        line-height: 6rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 2rem;
+        line-height: 3.5rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+
+        font-size: 24px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+
+        font-size: 20px;
+        line-height: 2rem;
+
+    }
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+
+        height: 70px;
+        width: 70px;
+
+    }
+
+    .ikonmeretdefault{
+        height: 65px;
+    }
+    .page{
+
+        height: 970px !important;
+    }
+}
+
+/*  LAPTOP 1440> */
+@media only screen and (min-width: 1441px) {
+    .SearchWrapper2 {
+
+        top: 23%;
+        left: 96%;
+    }
+
+    .elsonapgomb, .masodiknapgomb, .harmadiknapgomb, .negyediknapgomb, .otodiknapgomb {
+        width: 150px;
+    }
+
+
+    /*terkep*/
+    #map {
+        z-index: 0;
+        width:100%;
+        height: 100%;
+
+    }
+    .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+        top: 200px !important;
+        font-size: 25px !important;
+    }
+    /*5.előrejelzés*/
+    .elsonapgomb, .masodiknapgomb, .harmadiknapgomb, .negyediknapgomb, .otodiknapgomb{
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+        border-style: solid;
+        border-color: #0883a4;
+    }
+
+
+    .otnapiadatok1, .otnapiadatok2{
+        font-size: 24px;
+    }
+    .otnapiadatok4, .otnapiadatok5, .otnapiadatok6, .otnapiadatok7, .otnapiadatok8 {
+        padding-top: 12px;
+        font-size: 20px;
+    }
+    .otnapiadatok3{
+        font-size:20px;
+    }
+
+    .otodiknapdatum{
+        font-size:30px;
+    }
+
+    #otodiknapielorejelzespkiiras.wrapper{
+        font-size: 20px;
+        line-height: 40px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        font-weight: bold;
+    }
+
+    /*5.előrejelzésvége*/
+
+
+    /* 3órás*/
+
+    .szeliranyharomorasikon{
+        height: 90px;
+
+    }
+    .panel-weather .threehoursikon {
+
+        height: 100px;
+        width: 130px;
+        margin-right: 50px;
+
+    }
+
+    #fel{
+        height: 180px !important;
+        padding-top: 30px;
+    }
+
+    #hom, #fahren{
+        height: 230px;
+        padding-top: 30px;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        line-height: 3rem;
+        font-size: 23px;
+
+    }
+    .ikonmeretelorejelzes{
+        height: 60px;
+    }
+
+
+    /* 3órás vége*/
+
+    .hibasvaros{
+        font-size: 30px;
+    }
+    .page-home .panel-time .date {
+
+        font-size: 2rem;
+        line-height: 3rem;
+
+    }
+    .page-home .panel-time .time {
+
+        font-size: 5.5rem;
+        line-height: 7rem;
+
+    }
+    .page-home .panel-time {
+
+        top: 40px;
+        width: 100%;
+    }
+    .SearchWrapper {
+
+        width: 80%;
+        top: 25%; /*ezzel kell majd játszani*/
+        left: 10%;
+    }
+
+    .SearchWrapper input
+    {
+
+        padding:10px;  /*ezzel kell majd játszani*/
+        font-size: 20px;
+    }
+
+    .SearchWrapper button {
+        font-size: 20px;
+        height: 53px;
+    }
+
+    /* időjárás doboza, nagysága szélessége , margók.*/
+    .page-home .panel-weather {
+        top: 32%;
+        width: 80%;
+        height: 60%;
+        left: 10%;
+
+    }
+
+    .page-home .panel-weather .location {
+
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+
+    .page-home .panel-weather .kezdolapikon {
+
+        height: 100px;
+        width: 150px;
+        margin-right: 50px;
+
+    }
+
+    .page-home .panel-weather .temp {
+
+        font-size: 4rem;
+        line-height: 6rem;
+
+
+    }
+    .page-home .panel-weather .temp .degree {
+        font-size: 2rem;
+        line-height: 3.5rem;
+
+    }
+    .page-home .panel-weather .text {
+
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras1 {
+        font-size: 24px;
+        line-height: 2rem;
+    }
+    .page-home .panel-weather #kezdolapleiras2 {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+
+    .page-home .panel-weather #kezdolapleiras3 {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    .page-home .panel-weather #kezdolapleiras3 .kezdolapszelirany {
+        height: 70px;
+        width: 70px;
+    }
+
+    .ikonmeretdefault{
+        height: 65px;
+    }
+    .page{
+
+        height: 970px !important;
+    }
+
+}
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900|Dosis:300,400,600,700,800|Droid+Sans:400,700|Lato:300,400,700,900|PT+Sans:400,700|Ubuntu:300,400,500,700|Open+Sans:400,300,600,700|Roboto:400,300,500,700,900|Roboto+Condensed:400,300,700|Open+Sans+Condensed:300,700|Play:400,700|Maven+Pro:400,500,700,900&subset=latin,latin-ext);
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 794px;
+    top: 0;
+    width: auto;
+    background: Black;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+/*árnyalata az oldalnak, zöldeskék.*/
+.page .overlay {
+    position: absolute;
+    min-height: 794px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 233, 233, 0.2);
+}
+
+
+/*árnyalat eltolódások(színe).*/
+.panel {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+
+.page-home .panel-time {
+    color: white;
+    position: absolute;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.page-home .panel-time .time {
+    color: white;
+    text-align: center;
+}
+
+.page-home .panel-time .date {
+
+    background-color: rgba(0, 233, 233, 0.6);
+    text-align: center;
+    -moz-border-radius: 0px 0px 5px 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+
+
+/* időjárás doboza, nagysága szélessége , margók.*/
+.page-home .panel-weather {
+    position: absolute;
+    text-align: center;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/*canvas, minél kisebb, annál jobban összesűrűsödik, minél nagyobb annál jobban szétcsúszik*/
+#fel{
+    height: 30px;
+}
+
+.page-home .panel-weather .location {
+    background-color: rgba(0, 233, 233, 0.6);
+    -moz-border-radius: 5px 0px 0px 0px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 0px 0px 0px;
+}
+.page-home .panel-weather .icon {
+    display: inline-block;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-right: 40px;
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.page-home .panel-weather .temp {
+    display: inline-block;
+    vertical-align: top;
+
+}
+.page-home .panel-weather .temp .degree {
+    vertical-align: top;
+}
+
+
+.page-home .panel-calendar {
+    position: absolute;
+    top: 220px;
+    width: 380px;
+    height: 120px;
+    overflow: hidden;
+    background-color: initial;
+}
+.page-home .panel-calendar ul {
+    padding: 0px 20px;
+}
+.page-home .panel-calendar ul li {
+    padding: 0;
+    margin: 8px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.page-home .panel-calendar ul li .time,
+.page-home .panel-calendar ul li .title {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 2px 6px;
+}
+.page-home .panel-calendar ul li .time {
+    width: 120px;
+    text-align: center;
+    font-weight: 300;
+    background-color: rgba(0, 233, 233, 0.6);
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 0 0 4px;
+}
+.page-home .panel-tasks {
+    position: absolute;
+    top: 210px;
+    right: 0px;
+    width: 300px;
+    height: 140px;
+    overflow: hidden;
+    background-color: initial;
+}
+
+
+
+.page-home .panel-tasks ul li .plus {
+    width: 20px;
+    height: 20px;
+}
+.page-home .panel-tasks ul li.other .title {
+    font-style: italic;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+.page-home .panel-functions {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px 0px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.page-home .panel-functions .icon {
+    margin: 0px 20px;
+
+    width: 150px !important;   /**/
+    height: 150px !important;
+    padding: 5px;
+    text-align: center;
+    border: 6px solid rgba(0, 233, 233, 0.6);
+    -moz-border-radius: 87px;
+    -webkit-border-radius: 87px;
+    border-radius: 87px;
+}
+.page-home .panel-functions .icon .title {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+
+
+/* keresődoboz */
+.SearchWrapper {
+    display:inline-block;
+    position:absolute;
+}
+
+
+.SearchWrapper input,
+.SearchWrapper button {
+    background-color:transparent;
+    border:0;
+}
+.SearchWrapper input{
+    display:inline-block;
+    background-color:white;
+    width:calc(100% - 90px);
+
+
+}
+.SearchWrapper button{
+    display:inline-block;
+    background-color:#606060;
+    color:white;
+    float:right;
+    width:90px;
+}
+
+/*  Poziciot lekero gomb*/
+
+.SearchWrapper2 {
+  width: 0 !important;
+    position:absolute;
+
+}
+
+
+
+.SearchWrapper2 button {
+    background-color:transparent;
+    border:0;
+}
+
+.SearchWrapper2 button{
+    display:inline-block;
+    background-color:#606060;
+    color:white;
+    float:right;
+    width:90px;
+    height: 100px;
+}
+
+
+
+
+
+/*  gombok 5 napos előrejelzésnél*/
+.elsonapgomb, .masodiknapgomb, .harmadiknapgomb, .negyediknapgomb, .otodiknapgomb {
+    color: white;
+}
+.elsonapgomb:hover,.masodiknapgomb:hover,.harmadiknapgomb:hover,.negyediknapgomb:hover,.otodiknapgomb:hover{
+    background-color: rgba(0, 233, 233, 0.5);
+}
+
+
+
+/*////////////////////////////////////////////////// ///////////////////////// ///////////////////////// /////////////////////////  */
+
+/* Gallery upload style*/
+
+/* headers */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.25;
+    font-family: "Roboto Slab", Times, "Times New Roman", serif;
+}
+/* form elements */
+label {
+    display: inline-block;
+    font-weight: 700;
+}
+
+select, textarea, input {
+    padding: .5em;
+    margin: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+/* input border bottom animation on focus */
+.input-animate {
+    position: relative;
+    -webkit-transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
+}
+.input-animate:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: solid 3px;
+    color: mediumspringgreen;
+    -webkit-transition: width 200ms ease-in-out;
+    transition: width 200ms ease-in-out;
+}
+
+.input-animate-target {
+    border: none;
+}
+.input-animate-target:focus, .input-animate-target:valid {
+    outline: none;
+}
+.input-animate-target:focus ~ .input-animate:before, .input-animate-target:valid ~ .input-animate:before {
+    width: 100%;
+}
+
+/* font awesome */
+.fa {
+    font-family: FontAwesome;
+    font-style: normal;
+}
+
+/* flex */
+.flex-cont {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10%;
+}
+
+/* form */
+.form-cont {
+    max-width: 100%;
+    padding: 2em;
+    border-radius: 3px;
+    margin: auto;
+    background-color: #eee;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.form-heading {
+    margin-top: 0;
+    text-align: center;
+}
+
+.form-row {
+    position: relative;
+    margin-top: 1em;
+}
+
+.form-label {
+    margin-bottom: .2em;
+}
+
+.form-textbox:valid ~ .form-check-icon:after {
+    content: "\f00c";
+    position: absolute;
+    right: .5em;
+    bottom: .4em;
+    font-family: FontAwesome;
+    font-style: normal;
+    color: mediumspringgreen;
+}
+
+.form-submit {
+    display: block;
+    width: 75%;
+    padding: 1em;
+    border: none;
+    margin: 2em auto 0;
+    background-color: mediumspringgreen;
+    font-weight: 700;
+    color: white;
+    -webkit-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
+}
+.form-submit:hover, .form-submit:focus {
+    opacity: .6;
+}
+
+/*////////////////////////////////////////////////// ///////////////////////// ///////////////////////// /////////////////////////  */
+
+
+/* Profile Blade */
+#avatarcontainer{
+    max-width: 960px;
+    margin: 30px auto;
+    padding-top: 15%;
+}
+.avataruser {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0 20px;
+    color: white;
+    font-family: 'FontAwesome', serif;
+
+}
+.avataruser small {
+    display: block;
+    font-size: 15px;
+    padding-top: 8px;
+    color: gray;
+}
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 50px auto;
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
+
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: 320px){
+    .avataruser{
+        font-size: 24px !important;
+    }
+    #avatarcontainer{
+        padding-top: 30% !important;
+    }
+}
+@media (min-width: 768px){
+    .avataruser{
+        font-size: 32px !important;
+    }
+    #avatarcontainer{
+        padding-top: 25% !important;
+    }
+}
+@media (min-width: 1200px){
+    .avataruser{
+        font-size: 36px !important;
+    }
+    #avatarcontainer{
+        padding-top: 15% !important;
+    }
+}

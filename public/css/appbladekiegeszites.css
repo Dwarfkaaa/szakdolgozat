@@ -1,0 +1,368 @@
+
+header {
+    margin-bottom: 5%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background-color: #262626;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px; /*logó méret*/
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+header nav ul li.sub-menu:before {
+    content: "\f0d7";
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #fff;
+    right: 8px;
+}
+
+header nav ul li.active.sub-menu:before {
+    content: "\f0d8";
+}
+
+header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+}
+
+header nav ul li.active ul {
+    display: block;
+}
+
+header nav ul li ul li {
+    display: block;
+    width: 200px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background: #2196f3;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.menu-toggle {
+    color: white;
+    float: right;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        z-index: 1;
+        display: block;
+        font-size: 40px;
+    }
+
+    header nav {
+        z-index: 1;
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 50px);
+        background-color: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    header nav.active {
+        left: 0px;
+    }
+
+    header nav ul {        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    }
+
+    header nav ul li.active ul {
+        position: relative;
+        background-color: #003e6f;
+    }
+
+    header nav ul li ul li {
+        width: 100vw;
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+    .avatar{
+        display: none;
+    }
+    .avatarmenu2{
+        padding-left: 30px !important;
+    }
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1299px){
+    header {
+        font-size: 18px;
+    }
+    header .logo{
+        font-size: 26px;
+    }
+
+}
+
+@media (min-width: 1300px) and (max-width: 1599px){
+    header {
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+    header .logo{
+        font-size: 26px;
+    }
+
+}
+@media (min-width: 1600px) and (max-width: 1851px){
+    header {
+        font-size: 22px;
+        margin-bottom: 5%;
+    }
+    header .logo{
+        font-size: 30px;
+    }
+
+}
+@media (min-width: 1852px) and (max-width: 1919px){
+    header {
+        font-size: 28px;
+        margin-bottom: 5%;
+    }
+    header .logo{
+        font-size: 36px;
+    }
+
+}
+@media (min-width: 1920px) and (max-width: 2047px){
+    header {
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    header .logo{
+        font-size: 38px;
+    }
+
+}
+@media (min-width: 2048px) and (max-width: 2559px){
+    header {
+        font-size: 32px;
+    }
+    header .logo{
+        font-size: 42px;
+    }
+
+}
+@media (min-width: 2560px) and (max-width: 3839px){
+    header {
+        font-size: 36px;
+
+    }
+    header .logo{
+        font-size: 46px;
+    }
+
+
+
+}
+p{
+    color: white !important;
+}
+#chatter ul.discussions li .chatter_posts .chatter_middle > span .ago{
+    color: white;
+}
+
+
+@media only screen and (min-width:425px) and (max-width: 768px){
+    #chatter_header{
+        margin-top: 7% !important;
+    }
+    .avatar{
+        display: none !important;
+    }
+
+
+}
+@media only screen and (min-width: 768px){
+    #chatter_header{
+        margin-top: 5% !important;
+    }
+    .avatar{
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #chatter_header{
+        margin-top: 3% !important;
+    }
+    .avatar{
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 1600px){
+    #chatter_header{
+        margin-top: 2% !important;
+    }
+    .avatar{
+        display: none !important;
+    }
+}
+
+
+
+@media only screen and (min-width:420px) and (max-width: 470px){
+    #chatter_header{
+        margin-top: 10% !important;
+    }
+    #chatter_header h1{
+        font-size: 15px !important;
+    }
+    #chatter ul.discussions li .chatter_posts .chatter_post_actions p{
+        float: none;
+    }
+}
+@media only screen and (min-width:365px) and (max-width: 419px){
+    #chatter_header{
+        margin-top: 10% !important;
+    }
+    #chatter_header h1{
+        font-size: 15px !important;
+    }
+
+    #chatter ul.discussions li .chatter_posts .chatter_post_actions p{
+        float: none;
+        font-size: 8px;
+    }
+}
+@media only screen and (min-width:320px) and (max-width: 364px){
+    #chatter_header{
+        margin-top: 10% !important;
+    }
+    #chatter_header h1{
+        font-size: 15px !important;
+    }
+    #chatter ul.discussions li .chatter_posts .chatter_post_actions p{
+        float: none;
+        font-size: 8px;
+    }
+    #chatter ul.discussions li .chatter_posts .chatter_middle .chatter_middle_details a,
+    #chatter ul.discussions li .chatter_posts .chatter_middle > span .ago{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 767px){
+
+    #chatter.discussion #new_response #new_discussion {
+        height: 400px !important;
+        left: 40% !important;
+    }
+    .chatter_avatar span.chatter_avatar_circle {
+        height: 40px !important;
+        width: 40px !important;
+        font-size: 12px !important;
+        line-height: 40px !important;
+    }
+    #chatter.discussion #editor #tinymce_placeholder {
+        display: none !important;
+    }
+    #chatter_header span{
+        display: none;
+    }
+    img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 650px) {
+    #mceu_21{
+        width: 100% !important;
+        left: 0 !important;
+    }
+    #mceu_28{
+        left: 5% !important;
+    }
+    #mceu_29{
+        left: 25% !important;
+    }
+    #mceu_23-inp, #mceu_24, #mceu_25-inp, #mceu_26-inp{
+        width: 100px !important;
+    }
+
+
+    #mceu_35{
+        width: 100% !important;
+        left: 0 !important;
+    }
+    #mceu_31{
+        left: 5% !important;
+    }
+    #mceu_32{
+        left: 25% !important;
+    }
+    #mceu_37-inp, #mceu_38, #mceu_39{
+        width: 100px !important;
+    }
+
+
+
+
+
+}
