@@ -66,7 +66,7 @@ class LocationController extends Controller
         if (!isset($json['wind']['deg'])) {
             $windDeg = "Nincs adat";
         } else {
-            $windDeg = ccc$jsofn['wind']['deg'];
+            $windDeg = $json['wind']['deg'];
         }
 
         if ($windDeg == "") {
