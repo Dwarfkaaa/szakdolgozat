@@ -237,7 +237,7 @@ class SzegedController extends Controller
 
 
         return view('szeged', compact('descriptionSzeged', 'tempSzeged', 'temperatureMax1', 'temperatureMin1',
-            'humiditySzeged', 'windSpeedSzeged', 'windDegSzeged', 'ikonSzeged', 'townSzeged', 'tempCurrentFahrenheitSzeged',
+            'humiditySzeged', 'windSpeedSzeged', 'windDegSzeged', 'ikonSzeged',  'tempCurrentFahrenheitSzeged',
             'cloudCoverSzeged', 'pressureSzeged', 'sunriseSzeged', 'sunsetSzeged', 'temperatureFahrenheitMin1',
             'temperatureFahrenheitMax1', 'tempFeelslikeSzeged', 'tempFahrenheitFeelslikeSzeged',
 

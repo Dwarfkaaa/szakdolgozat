@@ -237,7 +237,7 @@ class SopronController extends Controller
 
 
         return view('sopron', compact('descriptionSopron', 'tempSopron', 'temperatureMax1', 'temperatureMin1',
-            'humiditySopron', 'windSpeedSopron', 'windDegSopron', 'ikonSopron', 'townSopron', 'tempCurrentFahrenheitSopron',
+            'humiditySopron', 'windSpeedSopron', 'windDegSopron', 'ikonSopron',  'tempCurrentFahrenheitSopron',
             'cloudCoverSopron', 'pressureSopron', 'sunriseSopron', 'sunsetSopron', 'temperatureFahrenheitMin1',
             'temperatureFahrenheitMax1', 'tempFeelslikeSopron', 'tempFahrenheitFeelslikeSopron',
 

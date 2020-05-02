@@ -237,7 +237,7 @@ class PecsController extends Controller
 
 
         return view('pecs', compact('descriptionPecs', 'tempPecs', 'temperatureMax1', 'temperatureMin1',
-            'humidityPecs', 'windSpeedPecs', 'windDegPecs', 'ikonPecs', 'townPecs', 'tempCurrentFahrenheitPecs',
+            'humidityPecs', 'windSpeedPecs', 'windDegPecs', 'ikonPecs', 'tempCurrentFahrenheitPecs',
             'cloudCoverPecs', 'pressurePecs', 'sunrisePecs', 'sunsetPecs', 'temperatureFahrenheitMin1',
             'temperatureFahrenheitMax1', 'tempFeelslikePecs', 'tempFahrenheitFeelslikePecs',
 

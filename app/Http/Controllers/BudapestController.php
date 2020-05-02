@@ -240,7 +240,7 @@ class BudapestController extends Controller
 
 
         return view('budapest', compact('descriptionBud', 'tempBud', 'temperatureMax1', 'temperatureMin1',
-            'humidityBud', 'windSpeedBud', 'windDegBud', 'ikonBud', 'townBud', 'tempCurrentFahrenheitBud',
+            'humidityBud', 'windSpeedBud', 'windDegBud', 'ikonBud', 'tempCurrentFahrenheitBud',
             'cloudCoverBud', 'pressureBud', 'sunriseBud', 'sunsetBud', 'temperatureFahrenheitMin1',
             'temperatureFahrenheitMax1', 'tempFeelslikeBud', 'tempFahrenheitFeelslikeBud',
 
