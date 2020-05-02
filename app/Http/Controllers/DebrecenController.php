@@ -240,7 +240,7 @@ class DebrecenController extends Controller
 
 
         return view('debrecen', compact('descriptionDeb', 'tempDeb', 'temperatureMax1', 'temperatureMin1',
-            'humidityDeb', 'windSpeedDeb', 'windDegDeb', 'ikonDeb', 'townDeb', 'tempCurrentFahrenheitDeb',
+            'humidityDeb', 'windSpeedDeb', 'windDegDeb', 'ikonDeb', 'tempCurrentFahrenheitDeb',
             'cloudCoverDeb', 'pressureDeb', 'sunriseDeb', 'sunsetDeb', 'temperatureFahrenheitMin1',
             'temperatureFahrenheitMax1', 'tempFeelslikeDeb', 'tempFahrenheitFeelslikeDeb',
 
