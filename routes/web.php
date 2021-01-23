@@ -34,7 +34,7 @@ Route::get('/forgetpw', function(){
 
 
 //kezdolap
-Route::get('/','KezdolapController@index');
+Route::get('/','PositionQueryController@index');
 Route::post('/', 'LocationController@location');
 
 // jelenlegi idojaras pozicio alapjan
@@ -79,4 +79,3 @@ Route::get('/szeged','SzegedController@index');
 //providers
 Route::get('auth/{provider}','Auth\RegisterController@redirectToProvider');
 Route::get('auth/{provider}/callback','Auth\RegisterController@handleProviderCallback');
-

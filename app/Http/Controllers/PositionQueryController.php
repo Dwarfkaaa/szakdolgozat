@@ -7,11 +7,11 @@ use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
-class KezdolapController extends Controller
+class PositionQueryController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
-        return view('kezdolap');
+        return view('positionquery');
 
     }
 

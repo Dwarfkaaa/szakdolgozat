@@ -39,9 +39,9 @@ return [
         'redirect' => 'http://idojarasapi.szakdolgozat.net/auth/facebook/callback',
     ],
  'google' => [
-        'client_id' => '552530611138-muc3177kln0ddv6etusf83kohaauejc1.apps.googleusercontent.com',
-        'client_secret' => '8oR6PlHujLOyPGhuykdk9auA',
-        'redirect' => 'http://idojarasapi.szakdolgozat.net/auth/google/callback',
+        'client_id' => '552530611138-jdjm04tjet17sigaj3ph0nndmie39m4k.apps.googleusercontent.com',
+        'client_secret' => '-WlFv4xOPFupbxXjv0lRk7aS',
+        'redirect' => 'http://127.0.0.1:8000/auth/google/callback',
     ],
 
 ];

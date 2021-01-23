@@ -346,9 +346,9 @@
     </div>
     <div class="panel panel-functions">
         <div class="ikonmeretdefault"><button id="gomb1" name="gomb1"  style="border: none; background: none;"> <img src="{{URL::asset('/images/celsiustemp.svg')}}" height="55" width="55">  </button></div>
-        <div class=ikonmeretdefault"><button id="gomb2" name="gomb2" style="border: none; background: none;"> <img src="{{URL::asset('/images/fahrenheittemp.png')}}" height="55" width="55">  </button></div>
-        <div class=ikonmeretdefault"><button id="gomb3" name="gomb3" style="border: none; background: none;"> <img src="{{URL::asset('/images/three.png')}}" height="55" width="55">  </button></div>
-        <div class=ikonmeretdefault"><button id="gomb4" name="gomb4" style="border: none; background: none;"> <img src="{{URL::asset('/images/five.png')}}" height="55" width="55">  </button></div>
+        <div class="ikonmeretdefault"><button id="gomb2" name="gomb2" style="border: none; background: none;"> <img src="{{URL::asset('/images/fahrenheittemp.png')}}" height="55" width="55">  </button></div>
+        <div class="ikonmeretdefault"><button id="gomb3" name="gomb3" style="border: none; background: none;"> <img src="{{URL::asset('/images/three.png')}}" height="55" width="55">  </button></div>
+        <div class="ikonmeretdefault"><button id="gomb4" name="gomb4" style="border: none; background: none;"> <img src="{{URL::asset('/images/five.png')}}" height="55" width="55">  </button></div>
     </div>
 
     <!--  Div Selector -->
