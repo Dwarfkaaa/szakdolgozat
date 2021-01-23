@@ -62,7 +62,7 @@ class ThreehoursController extends Controller
             )->getBody()->getContents();
 
         } catch (ClientException $e) {
-            return view('threehoursForecast', compact('closest', 'body'));
+            return view('threehoursForecast', compact('closest'));
         }
 
         $json = json_decode($body, true);

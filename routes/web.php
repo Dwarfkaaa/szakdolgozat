@@ -18,7 +18,7 @@ Route::post('/like', 'GalleryController@update_gallery')->name('like');
 
 
 //autocomplete
-Route::get('/autocomplete', 'KezdolapController@autocomplete')->name('autocomplete');
+Route::get('/autocomplete', 'PositionQueryController@autocomplete')->name('autocomplete');
 /////////////////////////////////
 
 
@@ -79,3 +79,5 @@ Route::get('/szeged','SzegedController@index');
 //providers
 Route::get('auth/{provider}','Auth\RegisterController@redirectToProvider');
 Route::get('auth/{provider}/callback','Auth\RegisterController@handleProviderCallback');
+
+Route::get('/{any}','PositionQueryController@index'); //this will redirect to the index page if any unknown routing url is given by mistake or by purpose.

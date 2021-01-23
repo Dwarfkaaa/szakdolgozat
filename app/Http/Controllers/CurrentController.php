@@ -60,9 +60,8 @@ class CurrentController extends Controller
             $body = $client->get('http://api.openweathermap.org/data/2.5/weather?q=' . $char_decodeCurrent . '&appid=86e5cbb3097836e0f2a884baa56e143a'
 
             )->getBody()->getContents();
-
         } catch (ClientException $e) {
-            return view('current', compact('closest', 'body'));
+            return view('current', compact('closest'));
         }
 
         $json = json_decode($body, true);
@@ -332,7 +331,7 @@ class CurrentController extends Controller
 
 
         return view('current', compact('name', 'description', 'temp','temperatureMax1','temperatureMin1',
-            'humidity', 'windSpeed', 'windDeg', 'ikon', 'town', 'kiiratasCurrent', 'body', 'tempCurrentFahrenheit',
+            'humidity', 'windSpeed', 'windDeg', 'ikon', 'town', 'body', 'tempCurrentFahrenheit',
             'cloudCover', 'pressure', 'sunrise', 'sunset', 'temperatureFahrenheitMax1','temperatureFahrenheitMin1','tempFeelslike', 'tempFahrenheitFeelslike'
         //3napos előrejelzés adatai, melyeket felhasználok jelenleg.
         ,'tempArray','threehoursArray',

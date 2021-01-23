@@ -466,7 +466,7 @@ class ComposerStaticInit1cef97e976b5d9a6ab36f5fd24448685
         'App\\Http\\Controllers\\DebrecenController' => __DIR__ . '/../..' . '/app/Http/Controllers/DebrecenController.php',
         'App\\Http\\Controllers\\FivedaysController' => __DIR__ . '/../..' . '/app/Http/Controllers/FivedaysController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
-        'App\\Http\\Controllers\\KezdolapController' => __DIR__ . '/../..' . '/app/Http/Controllers/KezdolapController.php',
+        'App\\Http\\Controllers\\PositionQueryController' => __DIR__ . '/../..' . '/app/Http/Controllers/PositionQueryController.php',
         'App\\Http\\Controllers\\LocationController' => __DIR__ . '/../..' . '/app/Http/Controllers/LocationController.php',
         'App\\Http\\Controllers\\PecsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PecsController.php',
         'App\\Http\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostController.php',

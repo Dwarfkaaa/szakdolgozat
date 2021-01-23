@@ -62,7 +62,7 @@ class FivedaysController extends Controller
             )->getBody()->getContents();
 
         } catch (ClientException $e) {
-            return view('fivedaysForecast', compact('closest', 'body'));
+            return view('fivedaysForecast', compact('closest'));
 
         }
         $fivedays = json_decode($body, true);

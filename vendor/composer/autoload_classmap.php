@@ -19,7 +19,7 @@ return array(
     'App\\Http\\Controllers\\DebrecenController' => $baseDir . '/app/Http/Controllers/DebrecenController.php',
     'App\\Http\\Controllers\\FivedaysController' => $baseDir . '/app/Http/Controllers/FivedaysController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
-    'App\\Http\\Controllers\\KezdolapController' => $baseDir . '/app/Http/Controllers/KezdolapController.php',
+    'App\\Http\\Controllers\\PositionQueryController' => $baseDir . '/app/Http/Controllers/PositionQueryController.php',
     'App\\Http\\Controllers\\LocationController' => $baseDir . '/app/Http/Controllers/LocationController.php',
     'App\\Http\\Controllers\\PecsController' => $baseDir . '/app/Http/Controllers/PecsController.php',
     'App\\Http\\Controllers\\PostController' => $baseDir . '/app/Http/Controllers/PostController.php',
