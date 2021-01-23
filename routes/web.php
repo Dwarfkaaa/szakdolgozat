@@ -80,4 +80,3 @@ Route::get('/szeged','SzegedController@index');
 Route::get('auth/{provider}','Auth\RegisterController@redirectToProvider');
 Route::get('auth/{provider}/callback','Auth\RegisterController@handleProviderCallback');
 
-Route::get('/asd','asdController@index');
